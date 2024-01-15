@@ -19,7 +19,7 @@ function ClientPage() {
     const { data } = useSuspenseQuery(query)
     console.log(data)
   return (
-    <div>
+    <div className='grid grid-cols-4'>
         <h1>Client Page</h1>
         <div>
             {data?.characters?.results.map((character) => (
